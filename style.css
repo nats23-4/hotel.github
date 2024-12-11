@@ -1,0 +1,450 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #62aef5;
+}
+
+.header {
+    background: url(https://www.kayak.com.pe/rimg/himg/7f/61/7a/expediav2-601348-adb170-787981.jpg?width=968&height=607&crop=true) no-repeat center center / cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Efecto de superposición */
+    z-index: -1;
+}
+
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav > ul > li {
+    margin: 20px 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.nav ul li a:hover {
+    border: 2px solid white;
+}
+.submenu li{
+    display: none;
+    position: absolute;
+    
+}
+nav > ul > li:hover .submenu li{
+    display: block;
+}
+
+
+/* Estilos de secciones */
+.section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #eef7ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón con animación */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::after {
+    left: 0;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(160, 98, 98, 0.1);
+}
+
+.servicios ul {
+    list-style: disc;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.servicios ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+
+.section {
+    position: relative;
+    padding: 60px 20px;
+    
+}
+.section instalaciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #00509e;
+    border-radius: 2px;
+}
+
+
+/* Estilos del formulario */
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #eef7ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #003f7d;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00509e;
+    box-shadow: 0 0 5px rgba(0, 80, 158, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00509e;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #003f7d;
+}
+
+.encuesta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formulario {
+    background: linear-gradient(135deg, #eef7ff, #d7e9f7);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(#606060, #000000);
+    color: white;
+    padding: 40px 20px;
+    font-size: 0.9em;
+    text-align: center;
+    
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100vw;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Secciones del footer */
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    
+    
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Información de contacto */
+.footer-section p {
+    margin: 5px 0;
+}
+
+/* Redes sociales */
+.social-icons a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Línea inferior */
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+
+.footer-bottom a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ffeb3b;
+}
+
+/* PAGINA DETALLES */
+/* SECCION 1 */
+
+section{
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(#97571f, #efb280);
+    border-top: 7px solid #ffffff;
+}
+
+section h2{
+   color: #ffffff;
+}
+
+section > p{
+    font-weight: bold;
+ }
+
+.d_contain_cards{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.d_contain_cards div{
+    max-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 1px #959595;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.d_contain_cards img{
+    max-width: 100%;
+}
+.conte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* SECCION 2 */
+.d_sec2{
+    border: none;
+    background: linear-gradient(#efb280, #97571f );
+}
+
+/* Seccion 3 */ 
+.d_sec3{
+    border: none;
+}
+form{
+    background-color: #ffffffb3;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+input{
+    height: 40px;
+    margin: 5px 0;
+}
+select{
+    height: 30px;
+    margin: 5px 0;
+}
+button{
+    width: 80px;
+    height: 40px;
+    background-color: #97571f;
+    border: none;
+    color: #f9f9f9;
+}
+/* holy grail*/
+.d_contain_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+aside h2{
+    margin: 15px 0;
+}
+main{
+width: 800px;
+}
+aside{
+    padding: 20px;
+    width: 200px;
+    box-sizing: border-box;
+}
+aside img{
+    max-width: 100%;
+}
