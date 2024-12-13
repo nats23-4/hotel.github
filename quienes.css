@@ -1,0 +1,428 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+header{
+    background-color: #22f6a1d0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+a:hover{
+    background-color: #6ab1c1cf;
+}
+
+header img{
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+}
+.portada{
+    position: relative;
+    width: 100vw;
+}
+.portada img{
+    width: 100vw;
+    height: 600px;
+    position: relative;
+    z-index: 0;
+}
+
+
+.portada a{
+    position: absolute;
+    bottom: 60px;
+    left: 500px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 5px solid #fff;
+}
+.tarjetas{
+    text-align: center;
+}
+.tarjetas div{
+    width: 300px;
+    height: 400px;
+    background-color: #58e69dc5;
+    display: inline-block;
+    margin: 25px 20px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 #000 ;
+    transition: width, height, 0.5s;
+    text-align: center;
+
+}
+.tarjetas div:hover{
+    width: 330px;
+    height: 410px;
+}
+
+ .tur div h2{
+    text-align: justify;
+}
+
+ .tur div img{
+    width: 280px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+
+.tarjetas div p{
+    width: 280px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.tarjetas div img{
+    width: 280px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.reseña{
+    width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.reseña h1{
+    text-align: center;
+    
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+/*transicion*/
+ .caja{
+    
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position:relative;
+    left: 0;
+    transition-property:color, background-color, left, top, height, padding;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(.04,.81,.88,.2);
+    transition-delay: 3s; 
+    transition: color 3s cubic-bezier(.04,.81,.88,.2)4s;
+} 
+body:hover .caja{
+    color: #1f08ac;
+    background-color: #b6b1e2;
+    height: 100px;
+    left: 700px;
+    top: 400px;
+    padding: 50px;
+}
+
+
+.portada1{
+    background-image: url(https://www.muyinteresante.com/wp-content/uploads/sites/5/2024/03/20/65face0771f30.jpeg);
+    background-size: cover;
+    background-position:0 70% ;
+    height: 250px;
+}
+.portada2{
+    text-align: center;
+    width: 700px;
+    margin: 0 auto; 
+}
+.portada2 h2{
+    color: #2e5c91;
+}
+.portada2 p{
+    color: #6a6868;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+    .colab{
+        text-align: center;
+    }
+    .colab div{
+        width: 350px;      
+        display: inline-block;
+        margin: 10px;
+        }
+        .colab div img{
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .tur{
+            text-align: center;
+            background-image: url(https://www.muyinteresante.com/wp-content/uploads/sites/5/2024/03/20/65face0771f30.jpeg);
+        padding: 15px; }
+        .tur div{
+    width: 200px;
+    display: inline-block;
+    margin: 10px;
+    background-color: #fff;
+    height: 330px;
+    display: inline-block;
+    transition: width,height, 0.5s;
+}
+.tur div:hover{
+    width: 240px;
+    height: 340px;
+    background-color: #b6b1e2;
+}
+ .tur div img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+ }
+
+ /*hjg*/
+ /* desbordamiento*/
+.box{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000;
+    overflow: scroll;/*visible,hidden,scroll se puede usa con 
+    las propiedades ocerflow-x:hidden y overflow-y:hidden para 
+    ocultar las barras de desplazamiento,auto*/
+
+}
+.img1{
+    width: 200px;
+    height: 100px;
+    border: 3px solid #000;
+    /* object-fit se utiliza para controlar el ajuste del 
+    contenido dentro de un contenedor, y se usa en imagenes o
+    archivos multiples*/
+    object-fit: fill;/*none,fill,cover,contain,scale-down*/
+    object-position:center;/* se utiliza mayormente cuando
+    el valor del object-fit es cover*/
+}
+.p-prueba{
+    width: 100vw;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 70%;
+}
+/* perro*/
+.foto{
+    width: 900px;
+    height: 600px;
+    text-align: center;
+    border: 3px solid #000;
+}
+.perro1{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    top: 180px;
+    margin: auto;
+}
+.perro2{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    position: relative;
+    top: 180px;
+    margin: auto;
+}
+.perro3{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    object-position: center;
+    position: relative;
+    top: 180px;
+    margin: auto;
+}
+/* paisaje*/
+.div1{
+    width: 900px;
+    height: 230px;
+    border: 10px solid red;
+}
+.i1{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+    padding: 10px;
+}
+.i2{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+    padding: 10px;
+}
+.i3{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    object-position: center;
+    padding: 10px;
+    margin: auto;
+}
+/*texto*/
+.div2{
+    width: 280px;
+    height: 680px;
+    border: 3px solid #000;
+    background-color: red;
+}
+.p1{
+    border: 3px solid #000;
+    width: 250px;
+    height: 200px;
+
+    /* background-color: #fff; */
+    
+}
+.p2{
+    border: 3px solid #000;
+    width: 250px;
+    height: 200px;
+    /* background-color: #fff; */
+}
+.p3{
+    border: 3px solid #000;
+    width: 250px;
+    height: 200px;
+}
+.div3{
+    border: 10px solid #000;
+    width: 650px;
+    height: 650px;
+    object-fit: fill;
+    object-position: center;
+    position: relative;
+    top: -680px;
+    left: 300px;
+    margin: auto;
+}
+/* pseudoclase para seleccionar elementos hijos*/
+.div2 p:first-child{
+    background-color: yellow;
+}
+.div2 p:last-child{
+    background-color: rgb(33, 33, 209);
+}
+/* para seleccvionar hijos en posiciones pares*/
+.div2 p:nth-child(2){
+    background-color: greenyellow;
+}
+.div2 p:nth-child(3){
+    background-color: rgb(47, 255, 245);
+}
+
+
+
+/* Estilos del formulario */
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #eef7ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #003f7d;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00509e;
+    box-shadow: 0 0 5px rgba(0, 80, 158, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00509e;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #003f7d;
+}
+
+.encuesta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formulario {
+    background: linear-gradient(135deg, #eef7ff, #d7e9f7);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

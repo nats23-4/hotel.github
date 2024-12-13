@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+header{
+    background-color: #f3f706d0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+a:hover{
+    background-color: #6ab1c1cf;
+}
+
+header img{
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+}
+.portada1{
+    background-size: cover;
+    background-position:0 70% ;
+    height: 100px;
+    font-size: 36px;
+    color: red;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto; 
+}
+.portada2{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto; 
+    height: 500px;
+}
+.portada2 p{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    font-size: 24px;
+    color: #000000;
+}
+.portada2 img{
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+.portada3{
+        width: 1000px;
+        margin: auto;
+        text-align: center;
+}
+.portada3 div{
+    width: 200px;
+    display: inline-block;
+    margin: 15px;
+    background-color: #fff;
+    height: 330px;
+    transition: width,height, 0.5s;
+}
+.portada3 div img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        
+}
+.portada3 div h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #000000;
+}
+.portada3  div:hover{
+    width: 240px;
+    height: 340px;
+    background-color: #58fdef;
+}
+footer{
+    background-color: #221f1fd2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100vw;
+}
+/* contactenos*/
+.sec1{
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #000000;  
+    margin: 10px auto;
+}
+.sec1 h3{
+    font-size: 20px;
+}
+form{
+    text-align: center;
+    margin:0 250px 15px;
+    text-align: left;
+}
+form tex{
+    width: 300px;
+    height: 35px;
+    margin: 0px;
+    padding: 0 ;
+text-align: justify;
+margin:0 250px 15px;
+}
+
+
+.btn{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 307px;
+    height: 35px;
+    background-color: #e2df0c;
+    margin: 7px 0 10px 0;
+    border: none;
+    border-radius: 5px;
+
+}
